@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>N</span>adia</a>
+
+        <nav class="navbar">
+            <ul class="list">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           
+        </nav>
+
+        <a href="#" class="contact">Contact Me</a>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Nadia</span><br>a Frontend Developer</h1>
+            <p>Full-stack web developer and UI/UX designer</p>
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Download CV</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="img/profile.jpg" alt="Profile Picture">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-img">
+            <img src="img/best.jpeg" alt="About Me Picture">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <h3>Frontend <span>Developer</span></h3>
+            <p>I’m a passionate full-stack web developer and UI/UX designer. <br>
+                I enjoy the creative process of designing and developing user-friendly, <br>
+                 visually appealing websites. With a strong foundation in both <br>
+                  front-end and back-end development, I am to create seamless  <br>
+                  digital experiences that make a difference.</p>
+            <a href="#" class="btn-2">Experience</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-form">
+        <h2>Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number" required>
+                <input type="text" placeholder="Subject" required>
+            </div>
+            <textarea placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">© 2024 Nadia Ikram | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".list");
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
